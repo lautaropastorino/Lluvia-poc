@@ -1,0 +1,71 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://fonts/OpenType (.otf)/Fortzilla-Regular.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://Scripts/GameOver.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 72
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 36
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 36
+font_data = ExtResource( 1 )
+
+[node name="GameOver" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+margin_right = 1080.0
+margin_bottom = 720.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_left = 253.0
+margin_top = 180.0
+margin_right = 827.0
+margin_bottom = 539.0
+custom_constants/separation = 50
+
+[node name="Perdiste" type="Label" parent="CenterContainer/VBoxContainer"]
+margin_right = 574.0
+margin_bottom = 83.0
+custom_fonts/font = SubResource( 1 )
+text = "¡Perdiste!"
+align = 1
+valign = 1
+
+[node name="Puntos" type="Label" parent="CenterContainer/VBoxContainer"]
+margin_top = 133.0
+margin_right = 574.0
+margin_bottom = 175.0
+custom_fonts/font = SubResource( 2 )
+text = "Hiciste {points} puntos"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Reiniciar" type="Label" parent="CenterContainer/VBoxContainer"]
+margin_top = 225.0
+margin_right = 574.0
+margin_bottom = 267.0
+custom_fonts/font = SubResource( 3 )
+text = "Apretá R para volver a empezar"
+align = 1
+
+[node name="Ir al menu" type="Label" parent="CenterContainer/VBoxContainer"]
+margin_top = 317.0
+margin_right = 574.0
+margin_bottom = 359.0
+custom_fonts/font = SubResource( 3 )
+text = "Apretá M para ir al menú"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

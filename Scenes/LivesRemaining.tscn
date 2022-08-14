@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scripts/InGameUI.gd" type="Script" id=1]
+[ext_resource path="res://fonts/OpenType (.otf)/Fortzilla-Regular.otf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 24
+font_data = ExtResource( 2 )
+
+[node name="InGameUI" type="Label" groups=[
+"ui_lives",
+]]
+margin_left = 20.0
+margin_top = 680.0
+margin_right = 223.0
+margin_bottom = 708.0
+custom_fonts/font = SubResource( 1 )
+text = "Vidas restantes:"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

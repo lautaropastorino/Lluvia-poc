@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Water Droplet  Sound Effect HD.mp3-a9b2f4414ee35d9c242776fc5d2a017d.mp3str"
+
+[deps]
+
+source_file="res://sounds/Water Droplet  Sound Effect HD.mp3"
+dest_files=[ "res://.import/Water Droplet  Sound Effect HD.mp3-a9b2f4414ee35d9c242776fc5d2a017d.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
